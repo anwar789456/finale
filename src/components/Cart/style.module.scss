@@ -1,0 +1,276 @@
+.cartContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 29vw;
+    height: 100vh;
+    background: #f3f2ec;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999999999;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+}
+
+.closeButton {
+    position: absolute;
+    top: .8rem;
+    right: .7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+/*
+.closeH1 {
+    color: rgba(48, 48, 48, 0.6);
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    margin-right: 1rem;
+}*/
+
+.headerContainer{
+    width: 100%;
+    border-bottom: 0.5px solid rgba($color: #303030, $alpha: 0.2);
+}
+.cartTitle {
+    padding: 11.5px 2rem;
+    .cartH1{
+        font-family: "Cormorant Garamond", serif;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 15px;
+        color: rgba($color: #303030, $alpha: 1.0);
+    }
+}
+
+.tableGrid{
+    display: grid;
+}
+.productImageCart{
+    margin-right: 5px;
+    //align-content: center;
+
+    width: 9rem;
+    height: 9rem;
+    .imgCart{
+        border-radius: 2px;
+    }                                                                                                                                                                                                           
+
+    @media (max-width: 600px) {
+        width: 7rem;
+        height: 7rem;
+    }
+
+}
+.cartItemsContainer {
+    padding: 0px;
+    overflow-y: auto;
+    position: relative;
+    height: calc(100vh - 3rem);
+}
+
+.emptyCart{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 100%;
+    text-align: center;
+}
+
+.emptyCartText{
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 15px;
+    color: rgba($color: #303030, $alpha: 0.8);
+}
+  
+.cartItem {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1px;
+    border-bottom: 1px solid rgba($color: #303030, $alpha: 0.2);
+}
+
+.itemInfo {
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 15px;
+    color: rgba($color: #303030, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    //text-align: left;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
+
+}
+
+.tnworddesign{
+    font-size: 8px;
+    font-weight: 500;
+    color: rgba($color: #303030, $alpha: 1);
+    letter-spacing: 0.09em;
+}
+
+.itemActions {
+    display: flex;
+    .quantityController {
+        position: relative;
+        border: 1px solid rgba(#303030, 0.3);
+        padding: 2px 30px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+
+        .minusButton {
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(#303030, 1.0);
+        }
+
+        .quantityValue {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-family: Cormorant, serif;
+            color: rgba(#303030, 0.8);
+        }
+
+        .plusButton {
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(#303030, 1.0);
+        }
+    }
+
+    .removeButton {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border-radius: 15px;
+        margin-left: 10px;
+        height: 32px;
+        font-size: 16px;
+        color: rgba(#8d0909, 1.0);
+        border: 1px solid rgba(#8d0909, 0.6);
+        padding: 0.25rem 0.4rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        //justify-self: end;
+    }
+
+    .removeButton:hover {
+        color: #e2e2e2;
+        background-color: rgba(#8d0909, 1);
+    }
+
+    @media (max-width: 600px) {
+        .removeButton {
+            margin-left: 4px;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .cartContainer {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .cartContainer {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .cartContainer {
+        width: 60vw;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .cartContainer {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .cartContainer {
+        width: 100vw;
+    }
+}
+
+.totalPrice{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba($color: #303030, $alpha: 0.5);
+    .totalPriceText{
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        border-radius: 15px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .totalPriceTextValue{
+        position: absolute;
+        right: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 18px;
+
+        .tndSign{
+            font-size: 14px;
+            letter-spacing: 0;
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 100;
+        }
+    }
+}

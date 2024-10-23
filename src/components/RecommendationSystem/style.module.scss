@@ -1,0 +1,96 @@
+
+.recommendedProductsContainer{
+  border-top: 1px solid rgba($color: #303030, $alpha: 0.2);
+  padding-top: 20px;
+  //border-bottom: 1px solid rgba($color: #303030, $alpha: 0.2);
+}
+
+.title{
+  font-size: 20px;
+  color: rgba($color: #303030, $alpha: 0.7);
+  letter-spacing: .17em;
+  word-spacing: .2em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.titleDiv{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.linkContainer{
+  transition: scale .2s ease-in-out;
+}
+
+.linkContainer:hover{
+  scale: 1.02;
+}
+
+.linkContainer:active{
+  scale: 0.99;
+}
+
+.swiperContainer {
+  width: 100%;
+  cursor: grab;
+}
+
+.recommendedProductsContainer {
+  //padding: 20px; 
+  //margin-top: 2rem;
+  margin-bottom: 1rem;
+  //border-top: 1px solid rgba($color: #303030, $alpha: 0.2);
+}
+  
+.titleDiv{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 20px;
+  color: rgba($color: #303030, $alpha: 0.5);
+  letter-spacing: .17em;
+  word-spacing: .2em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.productImage {
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.productName {
+  font-weight: bold;
+  font-size: 10px;
+  color: rgba($color: #303030, $alpha: 0.8);
+  letter-spacing: .10em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.productPrice {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 10px;
+  color: rgba($color: #303030, $alpha: .8);
+  letter-spacing: .10em;
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+}
