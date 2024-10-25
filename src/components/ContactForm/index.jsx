@@ -25,7 +25,7 @@ export default function Index() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://51.91.56.10:5000/submit-chatlog', {
+            const response = await fetch('http://57.128.221.37:5000/submit-chatlog', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
